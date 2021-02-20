@@ -1,0 +1,14 @@
+.block{
+    border: 1px solid #000;
+    height: 200px;
+}
+.block-1{
+    background-color: #C3DEF8;
+}
+.block-2{
+    border: 1px dashed #000;
+    background-color: #F3D8CF;
+}
+.block-3{
+    background-color: #EEC3C3;
+}
