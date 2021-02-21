@@ -52,27 +52,11 @@
       <input id="input-2" name="data-2">
       <input type="button" id="button" onclick="formComplete()" value="submit">
 
-      <!--?php
-        if(isset($_POST['submit'])) {
-        $file = "data.json";
-        $arr = array(
-            'number 1'     => $_POST['Number-1'],
-            'number 2'     => $_POST['Number-2'],
-            'number 3'     => $_POST['Number-3'],
-            'number 4'     => $_POST['Number-4'],
-            'number 5'     => $_POST['Number-5'],
-            'data 1'       => $_POST['data-1'],
-            'data 2'       => $_POST['data-2'],
-        );
-        $json_string = json_encode($arr);
-        file_put_contents($file, $json_string, FILE_APPEND);
-        echo $json_string;
-        }
-    ?>
+  
     </form>
-
-
     <div id="result"></div>
+
+    
 
     <script>
           function formComplete() {
@@ -85,7 +69,6 @@
           var input2 = document.getElementById('input-2').value;
           var formResult = select1 + select2 + select3 + select4 + select5 + input1 + input2;
           document.getElementById('result').innerHTML = formResult;
-
 
           var formData = JSON.stringify($("#form").serializeArray());
           $.ajax({
