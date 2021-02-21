@@ -4,43 +4,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="lorem ipsum">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Тест</title>
 </head>
 
 <body> 
-  
-  <form method="post" action="gfg.php"> 
-  <body>
-    <form name="form" id="form" method="POST" action="form.php">
-      <select name="Number-1" id="select-1">
+  <div class="form">
+    <form class="form__body" name="form" id="form" method="POST" action="gfg.php">
+      <select name="Number-1" id="select-1" class="form__selector">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-      <select name="Number-2" id="select-2">
+      <select name="Number-2" id="select-2" class="form__selector">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-      <select name="Number-3" id="select-3">
+      <select name="Number-3" id="select-3" class="form__selector">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-      <select name="Number-4" id="select-4">
+      <select name="Number-4" id="select-4" class="form__selector">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-      <select name="Number-5" id="select-5">
+      <select name="Number-5" id="select-5" class="form__selector">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -51,11 +50,9 @@
       <input id="input-1" name="data-1">
       <input id="input-2" name="data-2">
       <input type="button" id="button" onclick="formComplete()" value="submit">
-
-  
     </form>
     <div id="result"></div>
-
+  
     
 
     <script>

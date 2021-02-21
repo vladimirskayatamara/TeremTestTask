@@ -1,0 +1,10 @@
+.form{
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.form__selector option{
+    width: 150px;
+}
